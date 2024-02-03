@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3494e6, #ec6ead, #6b36b6);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .profile-image {
+            border: 10px solid transparent;
+            border-image-slice: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow */
+            transition: transform 0.3s ease; /* Transform on hover */
+        }
+
+        .contact-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 15px;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        .contact-icons a:hover {
+            color: #ffd700; /* Change color on hover */
+        }
+
+        .experience,
+        .coding-community {
+            margin-top: 20px;
+            border-top: 2px solid #fff; /* Section separators */
+            padding-top: 20px;
+        }
+
+        .footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 15px;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Larger font size for the header */
+        }
+
+        p {
+            font-size: 1.2em; /* Slightly larger font size for paragraphs */
+        }
+    </style>
+    <title>Kolzsticks</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+ <img src="https://kolzstikcs.github.io/h4y12/IMG_COM_202402032241240150.webp" alt="Your Image"
+                    class="img-fluid rounded-circle profile-IMG_COM_202402032241240150.webp" id="profileImage">
+            </div>
+            <div class="col-md-8 text-white">
+                <h1>~Kolzsticks</h1>
+                <p class="lead">Web Developer | Graphics Designer | Mathematician | Pianist</p>
+                <p>Hi, I'm a passionate web developer and graphics designer with expertise in HTML, CSS, JavaScript, and
+                    PHP. I have extensive experience in JavaScript and run an online tutorial coding community.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2 class="text-white">Skills</h2>
+                <p class="text-white">HTML | CSS | JavaScript | PHP | MySql</p>
+            </div>
+        </div>
+
+        <div class="row mt-4 experience">
+            <div class="col-md-12">
+                <h2 class="text-white">Experience</h2>
+                <p class="text-white">I have a strong background in JavaScript and have worked on various projects
+                    showcasing my skills in web development.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4 coding-community">
+            <div class="col-md-12">
+                <h2 class="text-white">Coding Community</h2>
+                <p class="text-white">I lead an online tutorial coding community where we learn, share, and collaborate on
+                    coding projects. Join us on this coding journey!</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 contact-icons">
+                <a href="mailto:kolzsticks1@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href="https://wa.me/2347048048559" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/Kolzstikcs" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/Kolzsticks" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Add hover effect to profile image
+        document.getElementById('profileImage').addEventListener('mouseover', function () {
+            this.style.transform = 'scale(1.1)';
+        });
+
+        document.getElementById('profileImage').addEventListener('mouseout', function () {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+
+</html>
