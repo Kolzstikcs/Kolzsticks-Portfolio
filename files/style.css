@@ -432,6 +432,8 @@ color: grey;
  .social-links {
     margin-left: 20px;
     margin-bottom: 10px;
+    display: flex ;
+    align-items: center ;
 }
 
  .social-links h3 {
@@ -440,14 +442,15 @@ color: grey;
 }
 
 .social-link {
-    font-size: 10px;
-}
-
-.social-link {
-    display: inline-block;
-    margin-right: 5px;
-    color: #fff;
     font-size: 15px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
 }
 
 .social-link:hover {
