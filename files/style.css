@@ -1,0 +1,466 @@
+body {
+           /* background: linear-gradient(135deg, #3494e6, #ec6ead, #6b36b6);*/
+           background: #333 !important;
+           /* background-size: 400% 400%;
+            animation: gradient 10s ease infinite;*/
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            scroll-behavior: smooth; /* Smooth scrolling */
+            
+        }
+
+/*
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+*/
+  nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #222;
+   height: 60px !important;
+    width: 100%;
+    padding: 5px !important;
+    z-index: 900;
+  }
+
+.nav-text{
+  color: #fff !important;
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+.container{
+  background: #333 !important;
+  padding-top: 50px;
+  padding-left: 20px !important;
+}
+
+.nav-items{
+
+}
+
+
+.nav-items .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap:20px;
+  padding-right: 30px;
+margin-top: 20px;
+}
+  .nav-items .links .active {
+    color: #fff ;
+  }
+  
+.nav-items .links a {
+    text-align: center;
+    list-style: none;
+    font-size: 17px;
+    text-decoration: none;
+    color: #C4C4C4;
+    font-family: Poppins;
+   
+  }
+  
+
+
+.nav-items .links a i{
+  display: none;
+}
+
+  .close-icon{
+    display: none;
+  }
+    .toggle-nav{
+    display: none;
+      
+    }
+    
+    .img-cont{
+      display: flex;
+      align-items: center ;
+      justify-content: center;
+    }
+        .profile-image {
+            border: 5px solid hotpink;
+        border-radius: 10px;
+            transition: transform 0.3s ease; 
+          width: 200px;
+          margin-bottom:20px;
+        }
+
+        .contact-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 15px;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        .contact-icons a:hover {
+            color: #ffd700; /* Change color on hover */
+        }
+
+        .experience,
+        .coding-community {
+            margin-top: 20px;
+            /*border-top: 2px solid #fff;  Section separators */
+            padding-top: 20px;
+        }
+
+   
+
+        h1 {
+            font-size: 2.5em; /* Larger font size for the header */
+        }
+
+        p {
+            font-size: 1.2em;
+}
+
+.wa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.wa img{
+  width: 100%;
+}
+
+progress[value] {
+  --color: hotpink; /* the progress color */
+  --background: lightgrey; /* the background color */
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 200px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0;
+  color: #fff
+}
+
+.note{
+  border-left: 2px solid hotpink !important;
+  background: #444 !important;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+   
+}
+
+.creator-description {
+    max-width: 300px; /* Limit the width of creator description */
+    margin-left: 20px;
+}
+
+.creator-description h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.creator-description p {
+    font-size: 16px;
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.creator-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-social {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info, .social-links {
+    margin-left: 50px;
+}
+
+.contact-info h3, .social-links h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-info p, .social-link {
+    font-size: 14px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-link:hover {
+    color: #ccc;
+}
+
+.nav-text{
+  color: hotpink;
+}
+
+.copyright{
+  text-align: center;
+  font-size:15px;
+}
+
+.splide__slide{
+  width: 200px;
+  height: 200px;
+  background-color: hotpink;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav{
+    display: flex !important;
+    align-items:center !important;
+    justify-content: space-between;
+    column-gap: 100px;
+    padding: 5px;
+    z-index: 900;
+    color: #fff;
+  }
+p {
+            font-size: 1em;
+}
+
+
+  .nav-items {
+      display: none;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
+  z-index: 1000;
+  
+  }
+  
+  
+.nav-items .links{
+  display:flex;
+  align-items: center;
+justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  row-gap: 30px;
+  color: white;
+  
+}
+
+  .nav-items .links a {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: hotpink;
+    font-family: Poppins;
+    opacity: 1;
+  }
+
+.nav-items .links a:active {
+    opacity:0.7;
+  }
+
+.nav-items .links a i{
+  display: inline;
+}
+
+h2{
+  color: hotpink !important;
+}
+.close-icon{
+display:block;
+
+  }
+  
+  .close-icon span{
+    display: block;
+    margin-right: 10px;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 70px;
+    color: white;
+    
+  }
+  
+  .close-icon span:hover{
+color: grey;    
+  }
+  
+ .toggle-nav{
+      background-color: transparent;
+      border:none;
+      color: hotpink;
+      font-size: 30px;
+      padding-right: 4px;
+      display: inline;
+      
+    }
+ footer {
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+      display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+   
+    .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}
+
+.creator-info{
+ padding: 10px 0 10px 5px;
+ /* border-top: 1px solid #6D6D6D;
+  border-bottom: 1px solid #6D6D6D;*/
+  width: 100%;
+}
+.creator-description p {
+    font-size: 10px;
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.creator-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contact-info{
+  display: none;
+}
+.contact-info p{
+  font-style: 8px !important;
+  
+}
+.contact-social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .social-links {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+ .social-links h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.social-link {
+    font-size: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.social-link:hover {
+    color: #ccc;
+}
+
+.copyright{
+  display: block;
+  margin:auto;
+  font-size:10px;
+  background: #000;
+  width: 100%;
+  height: 40px;
+}
+
+}
