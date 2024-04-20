@@ -202,10 +202,25 @@ label {
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
+   row-gap: 10px;
 }
 
+.slide_content{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background: #121212;
+   border: 1px solid #ccc;
+}
 
-
+.slide_content img{
+  width: 30px;
+}
 
 
 
@@ -296,10 +311,12 @@ label {
 
 .splide__slide{
   width: 200px;
-  height: 200px;
-  background-color: hotpink;
+  height: 300px;
+  background-color: #121212;
 }
-
+h2{
+  color: hotpink !important;
+}
 
 @media screen and (max-width: 768px) {
   nav{
@@ -362,9 +379,7 @@ justify-content: space-between;
   display: inline;
 }
 
-h2{
-  color: hotpink !important;
-}
+
 .close-icon{
 display:block;
 
