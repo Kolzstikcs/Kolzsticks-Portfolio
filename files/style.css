@@ -170,11 +170,17 @@ progress[value]::-moz-progress-bar {
   background: var(--color);
 }
 
+.skills{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
 label {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   display: block;
-  margin: 20px 0;
+
   color: #fff
 }
 
