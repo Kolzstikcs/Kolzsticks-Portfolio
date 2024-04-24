@@ -223,6 +223,24 @@ label {
 }
 
 
+.graphics {
+  width: 200px;
+  height: 200px;
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background: #121212;
+   
+}
+
+
+.graphics img{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+}
+
 
 
 
