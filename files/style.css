@@ -1,29 +1,17 @@
+:root {
+  --hot-pink: hotpink;
+}
+
 body {
-           /* background: linear-gradient(135deg, #3494e6, #ec6ead, #6b36b6);*/
+       
            background: #333 !important;
-           /* background-size: 400% 400%;
-            animation: gradient 10s ease infinite;*/
             font-family: 'Poppins', sans-serif;
             color: #fff;
-            scroll-behavior: smooth; /* Smooth scrolling */
+            scroll-behavior: smooth;
             
         }
 
-/*
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
 
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-*/
   nav{
     display: flex !important;
     align-items: center !important;
@@ -47,12 +35,16 @@ body {
 .container{
   background: #333 !important;
   padding-top: 50px;
-  padding-left: 20px !important;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
 .nav-items{
 
-}
+ }
 
 
 .nav-items .links{
@@ -96,13 +88,32 @@ margin-top: 20px;
       align-items: center ;
       justify-content: center;
     }
-        .profile-image {
-            border: 5px solid hotpink;
-        border-radius: 10px;
-            transition: transform 0.3s ease; 
-          width: 200px;
-          margin-bottom:20px;
-        }
+    
+    @keyframes border-glow {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 20, 147, 0.5); /* Initial glow */
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 20, 147, 0.8); /* Mid glow */
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 20, 147, 0.5); /* Return to initial glow */
+  }
+}
+
+.profile-image {
+  border: 5px solid var(--hot-pink); /* Border color */
+  transform: scale(1); 
+  border-radius: 10px; /* Rounded corners */
+  width: 200px; /* Image width */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  animation: border-glow 2s infinite; /* Continuous glow animation */
+  margin-bottom: 20px; /* Spacing below the image */
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
 
         .contact-icons a {
             color: #fff;
@@ -144,7 +155,7 @@ margin-top: 20px;
 }
 
 progress[value] {
-  --color: hotpink; /* the progress color */
+  --color: var(--hot-pink); /* the progress color */
   --background: lightgrey; /* the background color */
 
   -webkit-appearance: none;
@@ -184,19 +195,50 @@ label {
   color: #fff
 }
 
-.note{
-  border-left: 2px solid hotpink !important;
-  background: #444 !important;
+#skills {
+  background: #444;
   padding: 10px;
   border-radius: 5px;
+  width: 100%;
+  position: relative;
+  animation: border_change 4s linear infinite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+transition: .5s all;
+}
 
+@keyframes border_change {
+  0% {
+    border-left: 2px solid var(--hot-pink);
+  }
+  25% {
+    border-left: 2px solid var(--hot-pink);
+    border-top: 2px solid transparent;
+  }
+  50% {
+    border-top: 2px solid var(--hot-pink);
+    border-left: 2px solid transparent;
+  }
+  75% {
+    border-top: 2px solid transparent;
+    border-right: 2px solid var(--hot-pink);
+  }
+  100% {
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid var(--hot-pink);
+  }
 }
 
 .note1{
   background: #444 !important;
   padding: 10px;
   border-radius: 5px;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+transition: .5s all;
+}
 
+.note1:hover{
+  transform: scale(1.02);
 }
 .splide__slide{
    display: flex;
@@ -227,7 +269,7 @@ label {
 .graphics span{
   position: absolute;
   top: -5px;
-  background: hotpink;
+  background: var(--hot-pink);
   padding: 1px 5px 5px 5px;
   border-radius: 5px;
   
@@ -330,7 +372,7 @@ label {
 }
 
 .nav-text{
-  color: hotpink;
+  color: var(--hot-pink);
 }
 
 .copyright{
@@ -344,8 +386,126 @@ label {
   background-color: #121212;
 }
 h2{
-  color: hotpink !important;
+  color: var(--hot-pink) !important;
 }
+
+
+.circles{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.circles i{
+    position: absolute;
+    display: block;
+    list-style: none;
+    color: var(--hot-pink) !important;
+    font-size:1rem;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles i:nth-child(1){
+    left: 25%;
+    font-size:1.6rem;
+    animation-delay: 0s;
+}
+
+
+.circles i:nth-child(2){
+    left: 10%;
+    font-size:0.9rem;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles i:nth-child(3){
+    left: 70%;
+    font-size:1.1rem;
+    animation-delay: 4s;
+}
+
+.circles i:nth-child(4){
+    left: 40%;
+    font-size:1.3rem;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles i:nth-child(5){
+    left: 65%;
+    font-size:1rem;
+    animation-delay: 0s;
+}
+
+.circles i:nth-child(6){
+    left: 75%;
+    font-size:1.7rem;
+    animation-delay: 3s;
+}
+
+.circles i:nth-child(7){
+    left: 35%;
+    font-size:1.9rem;
+    animation-delay: 7s;
+}
+
+.circles i:nth-child(8){
+    left: 50%;
+    font-size:0.8rem;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles i:nth-child(9){
+    left: 20%;
+    font-size:0.6rem;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles i:nth-child(10){
+    left: 85%;
+    font-size:1.4rem;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-2000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   nav{
@@ -395,7 +555,7 @@ justify-content: space-between;
     list-style: none;
     font-size: 20px;
     text-decoration: none;
-    color: hotpink;
+    color: var(--hot-pink);
     font-family: Poppins;
     opacity: 1;
   }
@@ -428,15 +588,17 @@ display:block;
 color: grey;    
   }
   
- .toggle-nav{
+ .toggle-nav {
       background-color: transparent;
       border:none;
-      color: hotpink;
+      color: var(--hot-pink);
       font-size: 30px;
       padding-right: 4px;
       display: inline;
       
     }
+   
+
  footer {
     background-color: #222;
     color: #fff;
