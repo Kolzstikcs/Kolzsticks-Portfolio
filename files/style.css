@@ -26,10 +26,27 @@ body {
     z-index: 900;
   }
 
+  .progress-bar-container {
+            position: absolute; /* Position at the bottom of the navbar */
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 5px; /* Progress bar height */
+            background: var(--hot-pink); /* Background color for the progress container */
+          transition: width 0.01s ease;
+        }
+
+      
+
 .nav-text{
   color: #fff !important;
   margin-left: 10px;
   font-size: 19px;
+
+}
+
+.nav-text img{
+  width: 50px;
 }
 
 .container{

@@ -20,7 +20,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 
 <body>
   <nav>
-    <div class="nav-text">Kolzsticks Solutions</div>
+    <div class="nav-text"><img src="/files/images/1714268021021-transformed.png" alt=""></div>
+    <div  id="progress-bar" class="progress-bar-container"> <div class="progress-bar"></div>
+    </div>
     <div class="nav-items">
   
       <span class="close-icon"><span>&times;</span></span>
@@ -222,6 +224,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 } );
 
 splide.mount();
+
+
+
+document.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset; /* Current scroll position */
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight; /* Total scrollable height */
+        const scrollPercent = (scrollTop / docHeight) * 100; /* Calculate the scroll percentage */
+document.getElementById('progress-bar').style.width = `${scrollPercent}%`; /* Set the progress bar width */
+       
+    });
 </script>
         
     <script src="files/script.js"></script>
