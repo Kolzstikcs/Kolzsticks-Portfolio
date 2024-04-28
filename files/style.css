@@ -33,7 +33,7 @@ body {
             width: 0%;
             height: 5px; /* Progress bar height */
             background: var(--hot-pink); /* Background color for the progress container */
-          transition: width 0.01s ease;
+          transition: width 0.01s all;
         }
 
       
@@ -126,6 +126,8 @@ margin-top: 20px;
   transition: transform 0.3s ease; /* Smooth hover effect */
   animation: border-glow 2s infinite; /* Continuous glow animation */
   margin-bottom: 20px; /* Spacing below the image */
+  object-fit: cover;
+  object-position: right;
 }
 
 .profile-image:hover {
@@ -500,7 +502,7 @@ h2{
 
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 0.8;
+        opacity: 1;
         border-radius: 0;
     }
 
