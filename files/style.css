@@ -53,7 +53,7 @@ body {
   background: #333 !important;
   padding-top: 50px;
   display: flex;
-  align-items: center ;
+align-items: center ;
   justify-content: center;
   flex-direction: column;
   position: relative;
