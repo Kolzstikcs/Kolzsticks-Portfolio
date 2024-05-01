@@ -393,6 +393,9 @@ transition: .5s all;
 .nav-text{
   color: var(--hot-pink);
 }
+.row{
+  z-index: 1;
+}
 
 .copyright{
   text-align: center;
